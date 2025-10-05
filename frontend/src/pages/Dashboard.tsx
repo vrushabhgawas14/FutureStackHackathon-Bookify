@@ -64,6 +64,8 @@ export default function Dashboard() {
 
     if (userData?.Email) {
       fetchSummaries();
+    } else {
+      setLoading(false);
     }
   }, [userData?.Email]);
 
