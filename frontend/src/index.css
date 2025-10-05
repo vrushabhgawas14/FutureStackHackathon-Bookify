@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-textColor_secondary/50 cursor-grab rounded-xl;
+}
+
+.toggleNav {
+  @apply fixed top-0 left-1/2 -translate-x-1/2 flex-col h-screen z-40 space-y-10 sm:p-4 backdrop-blur-sm bg-borderColor_secondary;
+}
