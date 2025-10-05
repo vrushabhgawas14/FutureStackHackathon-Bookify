@@ -22,8 +22,8 @@ export const ConnectColumn = [
     text: "Login",
     url: "/login",
   },
-  {
-    text: "FAQ",
-    url: "/faq",
-  },
+  // {
+  //   text: "FAQ",
+  //   url: "/faq",
+  // },
 ];
