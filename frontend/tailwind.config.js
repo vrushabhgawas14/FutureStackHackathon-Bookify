@@ -13,7 +13,7 @@ module.exports = {
         borderColor_primary: "#d4d4d833", // textColor_primary/15
         borderColor_secondary: "#a8a29e26", // textColor_secondary/20
 
-        message: "#323232d9", // Prompt
+        message: "#323232d9", // Prompt Input
 
         colorBright: " #e4e4e7", // zinc-200
       },

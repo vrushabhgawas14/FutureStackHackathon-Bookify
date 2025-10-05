@@ -17,3 +17,38 @@ html::-webkit-scrollbar {
 .toggleNav {
   @apply fixed top-0 left-1/2 -translate-x-1/2 flex-col h-screen z-40 space-y-10 sm:p-4 backdrop-blur-sm bg-borderColor_secondary;
 }
+
+.inputMessage {
+  background: linear-gradient(
+    to right,
+    #83828226,
+    #83828226,
+    #3f3f3fd9,
+    #555454
+  );
+}
+
+.answer-rendering {
+  scroll-behavior: smooth;
+}
+
+.answer-rendering::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.answer-rendering::-webkit-scrollbar-thumb {
+  @apply bg-textColor_secondary/50 rounded-xl cursor-grab;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #323232d9;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #171717;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}

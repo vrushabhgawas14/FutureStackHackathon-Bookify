@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavbarAuthButton, NavbarDetails } from "../constants/NavbarDetails";
 import { useEffect, useState } from "react";
+import { useAuth } from "../context/authContext";
 
 export default function Navbar() {
   const hamburgerMenu = {
@@ -19,8 +20,7 @@ export default function Navbar() {
     ),
   };
 
-  const userLoggedIn = true;
-  const isUserVerified = true;
+  const { userLoggedIn, isUserVerified } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   let hamburger = hamburgerMenu.bar;
   hamburger = isOpen ? hamburgerMenu.cross : hamburgerMenu.bar;
