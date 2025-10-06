@@ -34,6 +34,9 @@ app.add_middleware(
 def main():
     return True
 
+@app.get("/health")
+def health():
+    return {"status" : "ok"}
 
 @app.post("/extract-text")
 async def extract_text(file: UploadFile = File(...)):
@@ -115,6 +118,7 @@ async def get_summary_of_text(data: Dict[str, str]):
     # print("Final: \n",formatted_text)
 
     return {"text": formatted_text}
+
 
 def resolve_query(text: str) -> str:
     try:
